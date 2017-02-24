@@ -1,0 +1,1420 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Experimental Features · PumpkinDB</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-theme-api/theme-api.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="script/errors/DatabaseError.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"PumpkinDB/PumpkinDB","types":["star","watch"],"size":"large"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="script/">
+            
+                <a href="script/">
+            
+                    
+                    PumpkinScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="script/-ROT.html">
+            
+                <a href="script/-ROT.html">
+            
+                    
+                    -ROT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="script/2DROP.html">
+            
+                <a href="script/2DROP.html">
+            
+                    
+                    2DROP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="script/2DUP.html">
+            
+                <a href="script/2DUP.html">
+            
+                    
+                    2DUP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="script/2NIP.html">
+            
+                <a href="script/2NIP.html">
+            
+                    
+                    2NIP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="script/2OVER.html">
+            
+                <a href="script/2OVER.html">
+            
+                    
+                    2OVER
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="script/2ROT.html">
+            
+                <a href="script/2ROT.html">
+            
+                    
+                    2ROT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="script/2SWAP.html">
+            
+                <a href="script/2SWAP.html">
+            
+                    
+                    2SWAP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="script/2TUCK.html">
+            
+                <a href="script/2TUCK.html">
+            
+                    
+                    2TUCK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="script/AND.html">
+            
+                <a href="script/AND.html">
+            
+                    
+                    AND
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="script/ASSOC.html">
+            
+                <a href="script/ASSOC.html">
+            
+                    
+                    ASSOC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="script/ASSOCQ.html">
+            
+                <a href="script/ASSOCQ.html">
+            
+                    
+                    ASSOC?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="script/COMMIT.html">
+            
+                <a href="script/COMMIT.html">
+            
+                    
+                    COMMIT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="script/CONCAT.html">
+            
+                <a href="script/CONCAT.html">
+            
+                    
+                    CONCAT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="script/CURSOR.html">
+            
+                <a href="script/CURSOR.html">
+            
+                    
+                    CURSOR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="script/CURSOR/CURQ.html">
+            
+                <a href="script/CURSOR/CURQ.html">
+            
+                    
+                    CURSOR/CUR?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="script/CURSOR/DOWHILE.html">
+            
+                <a href="script/CURSOR/DOWHILE.html">
+            
+                    
+                    CURSOR/DOWHILE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="script/CURSOR/DOWHILE-PREFIXED.html">
+            
+                <a href="script/CURSOR/DOWHILE-PREFIXED.html">
+            
+                    
+                    CURSOR/DOWHILE-PREFIXED
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="script/CURSOR/FIRSTQ.html">
+            
+                <a href="script/CURSOR/FIRSTQ.html">
+            
+                    
+                    CURSOR/FIRST?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19" data-path="script/CURSOR/LASTQ.html">
+            
+                <a href="script/CURSOR/LASTQ.html">
+            
+                    
+                    CURSOR/LAST?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.20" data-path="script/CURSOR/NEXTQ.html">
+            
+                <a href="script/CURSOR/NEXTQ.html">
+            
+                    
+                    CURSOR/NEXT?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21" data-path="script/CURSOR/SEEKQ.html">
+            
+                <a href="script/CURSOR/SEEKQ.html">
+            
+                    
+                    CURSOR/PREV?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.22" data-path="script/QCURSOR/CUR.html">
+            
+                <a href="script/QCURSOR/CUR.html">
+            
+                    
+                    ?CURSOR/CUR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.23" data-path="script/QCURSOR/DOWHILE.html">
+            
+                <a href="script/QCURSOR/DOWHILE.html">
+            
+                    
+                    ?CURSOR/DOWHILE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.24" data-path="script/QCURSOR/FIRST.html">
+            
+                <a href="script/QCURSOR/FIRST.html">
+            
+                    
+                    ?CURSOR/FIRST
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.25" data-path="script/QCURSOR/LAST.html">
+            
+                <a href="script/QCURSOR/LAST.html">
+            
+                    
+                    ?CURSOR/LAST
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.26" data-path="script/QCURSOR/NEXT.html">
+            
+                <a href="script/QCURSOR/NEXT.html">
+            
+                    
+                    ?CURSOR/NEXT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.27" data-path="script/QCURSOR/PREV.html">
+            
+                <a href="script/QCURSOR/PREV.html">
+            
+                    
+                    ?CURSOR/PREV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.28" data-path="script/QCURSOR/SEEK.html">
+            
+                <a href="script/QCURSOR/SEEK.html">
+            
+                    
+                    ?CURSOR/SEEK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.29" data-path="script/QCURSOR/SEEKLAST.html">
+            
+                <a href="script/QCURSOR/SEEKLAST.html">
+            
+                    
+                    ?CURSOR/SEEKLAST
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.30" data-path="script/DEF.html">
+            
+                <a href="script/DEF.html">
+            
+                    
+                    DEF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.31" data-path="script/DEPTH.html">
+            
+                <a href="script/DEPTH.html">
+            
+                    
+                    DEPTH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.32" data-path="script/DOWHILE.html">
+            
+                <a href="script/DOWHILE.html">
+            
+                    
+                    DOWHILE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.33" data-path="script/DROP.html">
+            
+                <a href="script/DROP.html">
+            
+                    
+                    DROP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.34" data-path="script/DUP.html">
+            
+                <a href="script/DUP.html">
+            
+                    
+                    DUP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.35" data-path="script/EQUALQ.html">
+            
+                <a href="script/EQUALQ.html">
+            
+                    
+                    EQUAL?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.36" data-path="script/EVAL.html">
+            
+                <a href="script/EVAL.html">
+            
+                    
+                    EVAL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.37" data-path="script/EVAL/SCOPED.html">
+            
+                <a href="script/EVAL/SCOPED.html">
+            
+                    
+                    EVAL/SCOPED
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.38" data-path="script/EVAL/VALIDQ.html">
+            
+                <a href="script/EVAL/VALIDQ.html">
+            
+                    
+                    EVAL/VALID?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.39" data-path="script/FEATUREQ.html">
+            
+                <a href="script/FEATUREQ.html">
+            
+                    
+                    FEATURE?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.40" data-path="script/GTQ.html">
+            
+                <a href="script/GTQ.html">
+            
+                    
+                    GT?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.41" data-path="script/HASH/SHA1.html">
+            
+                <a href="script/HASH/SHA1.html">
+            
+                    
+                    HASH/SHA1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.42" data-path="script/HASH/SHA224.html">
+            
+                <a href="script/HASH/SHA224.html">
+            
+                    
+                    HASH/SHA224
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.43" data-path="script/HASH/SHA256.html">
+            
+                <a href="script/HASH/SHA256.html">
+            
+                    
+                    HASH/SHA256
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.44" data-path="script/HASH/SHA384.html">
+            
+                <a href="script/HASH/SHA384.html">
+            
+                    
+                    HASH/SHA384
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.45" data-path="script/HASH/SHA512.html">
+            
+                <a href="script/HASH/SHA512.html">
+            
+                    
+                    HASH/SHA512
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.46" data-path="script/HASH/SHA512-224.html">
+            
+                <a href="script/HASH/SHA512-224.html">
+            
+                    
+                    HASH/SHA512-224
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.47" data-path="script/HASH/SHA512-256.html">
+            
+                <a href="script/HASH/SHA512-256.html">
+            
+                    
+                    HASH/SHA512-256
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.48" data-path="script/HLC.html">
+            
+                <a href="script/HLC.html">
+            
+                    
+                    HLC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.49" data-path="script/IF.html">
+            
+                <a href="script/IF.html">
+            
+                    
+                    IF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.50" data-path="script/IFELSE.html">
+            
+                <a href="script/IFELSE.html">
+            
+                    
+                    IFELSE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.51" data-path="script/LENGTH.html">
+            
+                <a href="script/LENGTH.html">
+            
+                    
+                    LENGTH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.52" data-path="script/LTQ.html">
+            
+                <a href="script/LTQ.html">
+            
+                    
+                    LT?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.53" data-path="script/NIP.html">
+            
+                <a href="script/NIP.html">
+            
+                    
+                    NIP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.54" data-path="script/NONEQ.html">
+            
+                <a href="script/NONEQ.html">
+            
+                    
+                    NONE?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.55" data-path="script/NOT.html">
+            
+                <a href="script/NOT.html">
+            
+                    
+                    NOT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.56" data-path="script/OR.html">
+            
+                <a href="script/OR.html">
+            
+                    
+                    OR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.57" data-path="script/OVER.html">
+            
+                <a href="script/OVER.html">
+            
+                    
+                    OVER
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.58" data-path="script/PAD.html">
+            
+                <a href="script/PAD.html">
+            
+                    
+                    PAD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.59" data-path="script/READ.html">
+            
+                <a href="script/READ.html">
+            
+                    
+                    READ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.60" data-path="script/RETR.html">
+            
+                <a href="script/RETR.html">
+            
+                    
+                    RETR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.61" data-path="script/ROT.html">
+            
+                <a href="script/ROT.html">
+            
+                    
+                    ROT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.62" data-path="script/SEND.html">
+            
+                <a href="script/SEND.html">
+            
+                    
+                    SEND
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.63" data-path="script/SET.html">
+            
+                <a href="script/SET.html">
+            
+                    
+                    SET
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.64" data-path="script/SLICE.html">
+            
+                <a href="script/SLICE.html">
+            
+                    
+                    SLICE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.65" data-path="script/SOMEQ.html">
+            
+                <a href="script/SOMEQ.html">
+            
+                    
+                    SOME?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.66" data-path="script/STACK.html">
+            
+                <a href="script/STACK.html">
+            
+                    
+                    STACK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.67" data-path="script/SUBSCRIBE.html">
+            
+                <a href="script/SUBSCRIBE.html">
+            
+                    
+                    SUBSCRIBE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.68" data-path="script/SWAP.html">
+            
+                <a href="script/SWAP.html">
+            
+                    
+                    SWAP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.69" data-path="script/TIMES.html">
+            
+                <a href="script/TIMES.html">
+            
+                    
+                    TIMES
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.70" data-path="script/TRY.html">
+            
+                <a href="script/TRY.html">
+            
+                    
+                    TRY
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.71" data-path="script/TUCK.html">
+            
+                <a href="script/TUCK.html">
+            
+                    
+                    TUCK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.72" data-path="script/UINT/ADD.html">
+            
+                <a href="script/UINT/ADD.html">
+            
+                    
+                    UINT/ADD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.73" data-path="script/UINT/SUB.html">
+            
+                <a href="script/UINT/SUB.html">
+            
+                    
+                    UINT/SUB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.74" data-path="script/UNSUBSCRIBE.html">
+            
+                <a href="script/UNSUBSCRIBE.html">
+            
+                    
+                    UNSUBSCRIBE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.75" data-path="script/UNWRAP.html">
+            
+                <a href="script/UNWRAP.html">
+            
+                    
+                    UNWRAP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.76" data-path="script/WRAP.html">
+            
+                <a href="script/WRAP.html">
+            
+                    
+                    WRAP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.77" data-path="script/WRITE.html">
+            
+                <a href="script/WRITE.html">
+            
+                    
+                    WRITE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.78" >
+            
+                <span>
+            
+                    
+                    Errors
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.78.1" data-path="script/errors/UNKNOWN_WORD.html">
+            
+                <a href="script/errors/UNKNOWN_WORD.html">
+            
+                    
+                    Unknown word
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.78.2" data-path="script/errors/InvalidValue.html">
+            
+                <a href="script/errors/InvalidValue.html">
+            
+                    
+                    Invalid value
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.78.3" data-path="script/errors/EmptyStack.html">
+            
+                <a href="script/errors/EmptyStack.html">
+            
+                    
+                    Empty stack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.78.4" data-path="script/errors/DECODING.html">
+            
+                <a href="script/errors/DECODING.html">
+            
+                    
+                    Decoding error
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.78.5" data-path="script/errors/DuplicateKey.html">
+            
+                <a href="script/errors/DuplicateKey.html">
+            
+                    
+                    Duplicate key
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.78.6" data-path="script/errors/UNKNOWN_KEY.html">
+            
+                <a href="script/errors/UNKNOWN_KEY.html">
+            
+                    
+                    Unknown key
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.78.7" data-path="script/errors/NoTransaction.html">
+            
+                <a href="script/errors/NoTransaction.html">
+            
+                    
+                    No transaction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.78.8" data-path="script/errors/DatabaseError.html">
+            
+                <a href="script/errors/DatabaseError.html">
+            
+                    
+                    Database error
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="FEATURES.html">
+            
+                <a href="FEATURES.html">
+            
+                    
+                    Experimental Features
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Experimental Features</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="experimental-features">Experimental Features</h1>
+<p>PumpkinDB is new and many (experimental) features are being hashed out. Instead of
+these features sitting in their own branches or Pull Requests, we decided to encourage
+broader experimentation.</p>
+<p>By default, no experimental features are enabled in a build. However,
+one can enable all experimental features by building with an appropriate flag:</p>
+<pre><code>$ cargo build --features=&quot;experimental&quot;
+</code></pre><p>Or supply a space-delimited list of individual features of interest.</p>
+<p>Once a feature is considered to be stable enough, the feature can be
+first promoted to the <code>default</code> feature set and once fully graduated
+(after a period of additional testing received through the inclusion
+in<code>default</code>), the feature gate can be dropped.</p>
+<h2 id="current-experimental-features">Current experimental features</h2>
+<h2 id="graduated-features">Graduated features</h2>
+<p>Graduated features are enabled by default, but in the source code,
+they are still behind a feature gate. This means that if things go
+wrong, they can still be easily demoted or dropped altogether. If
+everything is good, though, the gate will be eventually dropped.</p>
+<ul>
+<li><code>scoped_dictionary</code> (<a href="https://github.com/PumpkinDB/PumpkinDB/issues/71" target="_blank">issue #71</a>)</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Experimental Features","level":"1.3","depth":1,"previous":{"title":"Database error","level":"1.2.78.8","depth":3,"path":"script/errors/DatabaseError.md","ref":"script/errors/DatabaseError.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-api","fontsettings","github-buttons"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-api":{"languages":[],"split":true,"theme":"dark"},"fontsettings":{"family":"serif","size":3,"theme":"white"},"github-buttons":{"repo":"PumpkinDB/PumpkinDB","types":["star","watch"],"size":"large"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PumpkinDB","gitbook":"*"},"file":{"path":"FEATURES.md","mtime":"2017-02-23T06:36:17.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-24T16:34:48.280Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-theme-api/theme-api.js"></script>
+        
+    
+
+    </body>
+</html>
+
