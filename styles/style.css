@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'charterbold_italic';
+    src: url('charter_bold_italic-webfont.eot');
+    src: url('charter_bold_italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('charter_bold_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'charterbold';
+    src: url('charter_bold-webfont.eot');
+    src: url('charter_bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('charter_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'charteritalic';
+    src: url('charter_italic-webfont.eot');
+    src: url('charter_italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('charter_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'charterregular';
+    src: url('charter_regular-webfont.eot');
+    src: url('charter_regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('charter_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: 'charterregular', Georgia, serif;
+}
+
+i {
+  font-family: 'charteritalic', Georgia, serif;
+}
+
+h1 {
+    font-size: 32pt;
+}
+
+.header {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  .header {
+      padding-left: 1%;
+      padding-right: 1%;
+  }
+}
