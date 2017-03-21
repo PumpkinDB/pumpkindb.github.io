@@ -68,6 +68,8 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="EQUALQ.html" />
+    
     
     <link rel="prev" href="ADD.html" />
     
@@ -967,6 +969,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.2.5.7" data-path="../STARTSWITHQ.html">
+            
+                <a href="../STARTSWITHQ.html">
+            
+                    
+                    STARTSWITH?
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -1109,7 +1124,46 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.7.3" data-path="./">
+        <li class="chapter " data-level="1.2.7.3" data-path="../UINT/EQUALQ.html">
+            
+                <a href="../UINT/EQUALQ.html">
+            
+                    
+                    UINT/EQUAL?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.4" data-path="../UINT/LTQ.html">
+            
+                <a href="../UINT/LTQ.html">
+            
+                    
+                    UINT/LT?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.5" data-path="../UINT/GTQ.html">
+            
+                <a href="../UINT/GTQ.html">
+            
+                    
+                    UINT/GT?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.6" data-path="./">
             
                 <a href="./">
             
@@ -1122,7 +1176,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.7.4" data-path="ADD.html">
+        <li class="chapter " data-level="1.2.7.7" data-path="ADD.html">
             
                 <a href="ADD.html">
             
@@ -1135,12 +1189,51 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.7.5" data-path="SUB.html">
+        <li class="chapter active" data-level="1.2.7.8" data-path="SUB.html">
             
                 <a href="SUB.html">
             
                     
                     INT/SUB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.9" data-path="EQUALQ.html">
+            
+                <a href="EQUALQ.html">
+            
+                    
+                    INT/EQUAL?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.10" data-path="LTQ.html">
+            
+                <a href="LTQ.html">
+            
+                    
+                    INT/LT?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.11" data-path="GTQ.html">
+            
+                <a href="GTQ.html">
+            
+                    
+                    INT/GT?
             
                 </a>
             
@@ -1456,7 +1549,7 @@
                 <span>
             
                     
-                    Words
+                    Instructions
             
                 </span>
             
@@ -1671,12 +1764,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.14.1" data-path="../errors/UNKNOWN_WORD.html">
+        <li class="chapter " data-level="1.2.14.1" data-path="../errors/UNKNOWN_INSTRUCTION.html">
             
-                <a href="../errors/UNKNOWN_WORD.html">
+                <a href="../errors/UNKNOWN_INSTRUCTION.html">
             
                     
-                    Unknown word
+                    Unknown instruction
             
                 </a>
             
@@ -1798,6 +1891,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.4" data-path="../../WIRE_PROTOCOL.html">
+            
+                <a href="../../WIRE_PROTOCOL.html">
+            
+                    
+                    Wire Protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
@@ -1857,7 +1963,7 @@
 for the result.</p>
 <h2 id="errors">Errors</h2>
 <p><a href="../errors/EmptyStack.html">EmptyStack</a> error if there are less than two items on the stack</p>
-<p><a href="../errors/InvalidValue.html">InvalidValue</a> error if <code>a</code> is less than <code>b</code></p>
+<p><a href="../errors/InvalidValue.html">InvalidValue</a> error if <code>a</code> or <code>b</code> cannot be signed integers</p>
 <h2 id="tests">Tests</h2>
 <pre><code class="lang-test">works : +2 +1 INT/SUB +1 EQUAL?.
 negative_value : +1 +2 INT/SUB -1 EQUAL?.
@@ -1897,7 +2003,7 @@ empty_stack_1 : [+1 INT/SUB] TRY UNWRAP 0x04 EQUAL?.
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"INT/SUB","level":"1.2.7.5","depth":3,"next":{"title":"Data formats","level":"1.2.8","depth":2,"ref":"","articles":[{"title":"JSON?","level":"1.2.8.1","depth":3,"path":"script/JSONQ.md","ref":"script/JSONQ.md","articles":[]},{"title":"JSON/ARRAY?","level":"1.2.8.2","depth":3,"path":"script/JSON/ARRAYQ.md","ref":"script/JSON/ARRAYQ.md","articles":[]},{"title":"JSON/BOOLEAN?","level":"1.2.8.3","depth":3,"path":"script/JSON/BOOLEANQ.md","ref":"script/JSON/BOOLEANQ.md","articles":[]},{"title":"JSON/EMPTY","level":"1.2.8.4","depth":3,"path":"script/JSON/EMPTY.md","ref":"script/JSON/EMPTY.md","articles":[]},{"title":"JSON/GET","level":"1.2.8.5","depth":3,"path":"script/JSON/GET.md","ref":"script/JSON/GET.md","articles":[]},{"title":"JSON/HAS?","level":"1.2.8.6","depth":3,"path":"script/JSON/HASQ.md","ref":"script/JSON/HASQ.md","articles":[]},{"title":"JSON/NULL?","level":"1.2.8.7","depth":3,"path":"script/JSON/NULLQ.md","ref":"script/JSON/NULLQ.md","articles":[]},{"title":"JSON/NUMBER?","level":"1.2.8.8","depth":3,"path":"script/JSON/NUMBERQ.md","ref":"script/JSON/NUMBERQ.md","articles":[]},{"title":"JSON/OBJECT?","level":"1.2.8.9","depth":3,"path":"script/JSON/OBJECTQ.md","ref":"script/JSON/OBJECTQ.md","articles":[]},{"title":"JSON/SET","level":"1.2.8.10","depth":3,"path":"script/JSON/SET.md","ref":"script/JSON/SET.md","articles":[]},{"title":"JSON/STRING->","level":"1.2.8.11","depth":3,"path":"script/JSON/STRING_TO.md","ref":"script/JSON/STRING_TO.md","articles":[]},{"title":"JSON/STRING?","level":"1.2.8.12","depth":3,"path":"script/JSON/STRINGQ.md","ref":"script/JSON/STRINGQ.md","articles":[]},{"title":"JSON/->STRING","level":"1.2.8.13","depth":3,"path":"script/JSON/TO_STRING.md","ref":"script/JSON/TO_STRING.md","articles":[]}]},"previous":{"title":"INT/ADD","level":"1.2.7.4","depth":3,"path":"script/INT/ADD.md","ref":"script/INT/ADD.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-api","fontsettings","github-buttons","expandable-chapters","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"family":"serif","size":3,"theme":"white"},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"github-buttons":{"repo":"PumpkinDB/PumpkinDB","types":["star","watch"],"size":"large"},"ga":{"configuration":"auto","token":"UA-92644407-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PumpkinDB","gitbook":"*"},"file":{"path":"script/INT/SUB.md","mtime":"2017-02-27T03:02:23.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-28T16:14:34.707Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"INT/SUB","level":"1.2.7.8","depth":3,"next":{"title":"INT/EQUAL?","level":"1.2.7.9","depth":3,"path":"script/INT/EQUALQ.md","ref":"script/INT/EQUALQ.md","articles":[]},"previous":{"title":"INT/ADD","level":"1.2.7.7","depth":3,"path":"script/INT/ADD.md","ref":"script/INT/ADD.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-api","fontsettings","github-buttons","expandable-chapters","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"family":"serif","size":3,"theme":"white"},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"github-buttons":{"repo":"PumpkinDB/PumpkinDB","types":["star","watch"],"size":"large"},"ga":{"configuration":"auto","token":"UA-92644407-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PumpkinDB","gitbook":"*"},"file":{"path":"script/INT/SUB.md","mtime":"2017-03-12T20:59:18.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-21T22:57:02.152Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

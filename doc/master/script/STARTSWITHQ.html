@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>SOME? · PumpkinDB</title>
+        <title>STARTSWITH? · PumpkinDB</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -68,10 +68,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="INT/TOUINT.html" />
     
-    
-    <link rel="prev" href="NONEQ.html" />
+    <link rel="prev" href="SLICE.html" />
     
 
     <style>
@@ -528,7 +526,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.3.2" data-path="SOMEQ.html">
+        <li class="chapter " data-level="1.2.3.2" data-path="SOMEQ.html">
             
                 <a href="SOMEQ.html">
             
@@ -969,7 +967,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5.7" data-path="STARTSWITHQ.html">
+        <li class="chapter active" data-level="1.2.5.7" data-path="STARTSWITHQ.html">
             
                 <a href="STARTSWITHQ.html">
             
@@ -1934,7 +1932,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >SOME?</a>
+        <a href=".." >STARTSWITH?</a>
     </h1>
 </div>
 
@@ -1949,27 +1947,26 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="some">SOME?</h1>
-<div class="api-method"><div class="api-method-definition"><p>Tests if the topmost stack item&apos;s length is larger than zero.</p>
-<p>Input stack: <code>a</code></p>
+                                <h1 id="startswith">STARTSWITH?</h1>
+<div class="api-method"><div class="api-method-definition"><p>Tests if binary starts with another binary</p>
+<p>Input stack: <code>a b</code></p>
 <p>Output stack: <code>c</code></p>
-<p><code>SOME?</code> will push <code>1</code> if the item&apos;s length is larger than zero, <code>0</code> otherwise.</p>
-<p>It has a &quot;sister&quot; instruction of <a href="NONEQ.html">NONE?</a>. Together they allow to
-express a concept of an optional value.</p>
-</div><div class="api-method-code"><div class="api-method-example"><pre><code>PumpkinDB&gt; [] SOME?
-0
-PumpkinDB&gt; [1] SOME?
-1
+<p><code>STARTSWITH?</code> pushes <code>1</code> if binary <code>a</code> starts with binary <code>b</code>,
+<code>0</code> otherwise.</p>
+</div><div class="api-method-code"><div class="api-method-example"><pre><code>PumpkinDB&gt; &quot;ab&quot; &quot;a&quot; STARTSWITH?
+0x01
 </code></pre></div></div></div>
 
 <h2 id="allocation">Allocation</h2>
-<p>None</p>
+<p>Runtime allocation</p>
 <h2 id="errors">Errors</h2>
-<p><a href="errors/EmptyStack.html">EmptyStack</a> error if there is less than one items on the stack</p>
+<p><a href="errors/EmptyStack.html">EmptyStack</a> error if there are less than two items on the stack</p>
 <h2 id="tests">Tests</h2>
-<pre><code class="lang-test">works : [1] SOME?.
-works_1 : [] SOME? NOT.
-empty_stack : [SOME?] TRY UNWRAP 0x04 EQUAL?.
+<pre><code class="lang-test">works : &quot;ab&quot; &quot;a&quot; STARTSWITH?.
+works_negative : &quot;ab&quot; &quot;c&quot; STARTSWITH? NOT.
+smaller_val : &quot;a&quot; &quot;ab&quot; STARTSWITH? NOT.
+empty_stack : [STARTSWITH?] TRY UNWRAP 0x04 EQUAL?.
+empty_stack_1 : [&quot;a&quot; STARTSWITH?] TRY UNWRAP 0x04 EQUAL?.
 </code></pre>
 
                                 
@@ -2004,7 +2001,7 @@ empty_stack : [SOME?] TRY UNWRAP 0x04 EQUAL?.
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"SOME?","level":"1.2.3.2","depth":3,"next":{"title":"INT->UINT","level":"1.2.3.3","depth":3,"path":"script/INT/TOUINT.md","ref":"script/INT/TOUINT.md","articles":[]},"previous":{"title":"NONE?","level":"1.2.3.1","depth":3,"path":"script/NONEQ.md","ref":"script/NONEQ.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-api","fontsettings","github-buttons","expandable-chapters","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"family":"serif","size":3,"theme":"white"},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"github-buttons":{"repo":"PumpkinDB/PumpkinDB","types":["star","watch"],"size":"large"},"ga":{"configuration":"auto","token":"UA-92644407-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PumpkinDB","gitbook":"*"},"file":{"path":"script/SOMEQ.md","mtime":"2017-03-21T15:21:30.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-21T22:57:02.152Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"STARTSWITH?","level":"1.2.5.7","depth":3,"next":{"title":"Control flow","level":"1.2.6","depth":2,"ref":"","articles":[{"title":"DOWHILE","level":"1.2.6.1","depth":3,"path":"script/DOWHILE.md","ref":"script/DOWHILE.md","articles":[]},{"title":"EVAL","level":"1.2.6.2","depth":3,"path":"script/EVAL.md","ref":"script/EVAL.md","articles":[]},{"title":"EVAL/SCOPED","level":"1.2.6.3","depth":3,"path":"script/EVAL/SCOPED.md","ref":"script/EVAL/SCOPED.md","articles":[]},{"title":"EVAL/VALID?","level":"1.2.6.4","depth":3,"path":"script/EVAL/VALIDQ.md","ref":"script/EVAL/VALIDQ.md","articles":[]},{"title":"TIMES","level":"1.2.6.5","depth":3,"path":"script/TIMES.md","ref":"script/TIMES.md","articles":[]},{"title":"TRY","level":"1.2.6.6","depth":3,"path":"script/TRY.md","ref":"script/TRY.md","articles":[]}]},"previous":{"title":"SLICE","level":"1.2.5.6","depth":3,"path":"script/SLICE.md","ref":"script/SLICE.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-api","fontsettings","github-buttons","expandable-chapters","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"family":"serif","size":3,"theme":"white"},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"github-buttons":{"repo":"PumpkinDB/PumpkinDB","types":["star","watch"],"size":"large"},"ga":{"configuration":"auto","token":"UA-92644407-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PumpkinDB","gitbook":"*"},"file":{"path":"script/STARTSWITHQ.md","mtime":"2017-03-12T20:59:18.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-21T22:57:02.152Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
