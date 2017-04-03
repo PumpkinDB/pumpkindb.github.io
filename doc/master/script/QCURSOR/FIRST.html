@@ -1603,12 +1603,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.11.1" data-path="../SEND.html">
+        <li class="chapter " data-level="1.2.11.1" data-path="../PUBLISH.html">
             
-                <a href="../SEND.html">
+                <a href="../PUBLISH.html">
             
                     
-                    SEND
+                    PUBLISH
             
                 </a>
             
@@ -1968,7 +1968,7 @@ Otherwise, <code>[]</code> will be pushed. Useful in conjunction with <a href=".
 <h2 id="tests">Tests</h2>
 <pre><code class="lang-test">works : [&quot;1&quot; &quot;2&quot; ASSOC COMMIT] WRITE [CURSOR &apos;c SET c ?CURSOR/FIRST] READ [&quot;1&quot; &quot;2&quot;] EQUAL?.
 requires_txn : [&quot;1&quot; ?CURSOR/FIRST] TRY UNWRAP 0x08 EQUAL?.
-empty_stack : [?CURSOR/FIRST] TRY UNWRAP 0x04 EQUAL?.
+empty_stack : [[?CURSOR/FIRST] TRY] READ UNWRAP 0x04 EQUAL?.
 invalid_cursor : [[&quot;1&quot; ?CURSOR/FIRST] READ] TRY UNWRAP 0x03 EQUAL?.
 </code></pre>
 
@@ -2004,7 +2004,7 @@ invalid_cursor : [[&quot;1&quot; ?CURSOR/FIRST] READ] TRY UNWRAP 0x03 EQUAL?.
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"?CURSOR/FIRST","level":"1.2.4.14","depth":3,"next":{"title":"?CURSOR/LAST","level":"1.2.4.15","depth":3,"path":"script/QCURSOR/LAST.md","ref":"script/QCURSOR/LAST.md","articles":[]},"previous":{"title":"?CURSOR/DOWHILE","level":"1.2.4.13","depth":3,"path":"script/QCURSOR/DOWHILE.md","ref":"script/QCURSOR/DOWHILE.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-api","fontsettings","github-buttons","expandable-chapters","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"family":"serif","size":3,"theme":"white"},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"github-buttons":{"repo":"PumpkinDB/PumpkinDB","types":["star","watch"],"size":"large"},"ga":{"configuration":"auto","token":"UA-92644407-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PumpkinDB","gitbook":"*"},"file":{"path":"script/QCURSOR/FIRST.md","mtime":"2017-03-03T02:05:31.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-21T22:57:02.152Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"?CURSOR/FIRST","level":"1.2.4.14","depth":3,"next":{"title":"?CURSOR/LAST","level":"1.2.4.15","depth":3,"path":"script/QCURSOR/LAST.md","ref":"script/QCURSOR/LAST.md","articles":[]},"previous":{"title":"?CURSOR/DOWHILE","level":"1.2.4.13","depth":3,"path":"script/QCURSOR/DOWHILE.md","ref":"script/QCURSOR/DOWHILE.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-api","fontsettings","github-buttons","expandable-chapters","ga","include"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"include":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"family":"serif","size":3,"theme":"white"},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"github-buttons":{"repo":"PumpkinDB/PumpkinDB","types":["star","watch"],"size":"large"},"ga":{"configuration":"auto","token":"UA-92644407-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PumpkinDB","gitbook":"*"},"file":{"path":"script/QCURSOR/FIRST.md","mtime":"2017-03-25T00:29:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-03T18:42:15.568Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

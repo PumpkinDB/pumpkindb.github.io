@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>DUP · PumpkinDB</title>
+        <title>PUBLISH · PumpkinDB</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -68,10 +68,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="NIP.html" />
+    <link rel="next" href="SUBSCRIBE.html" />
     
-    
-    <link rel="prev" href="DROP.html" />
     
 
     <style>
@@ -282,7 +280,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.1.11" data-path="DUP.html">
+        <li class="chapter " data-level="1.2.1.11" data-path="DUP.html">
             
                 <a href="DUP.html">
             
@@ -1603,7 +1601,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.11.1" data-path="PUBLISH.html">
+        <li class="chapter active" data-level="1.2.11.1" data-path="PUBLISH.html">
             
                 <a href="PUBLISH.html">
             
@@ -1934,7 +1932,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >DUP</a>
+        <a href=".." >PUBLISH</a>
     </h1>
 </div>
 
@@ -1949,21 +1947,24 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="dup">DUP</h1>
-<div class="api-method"><div class="api-method-definition"><p>Duplicates an item at the top of the stack</p>
-<p>Input stack: <code>a</code></p>
-<p>Output stack: <code>a a</code></p>
-</div><div class="api-method-code"><div class="api-method-example"><pre><code>PumpkinDB&gt; 0x10 DUP
-0x10 0x10
+                                <h1 id="publish">PUBLISH</h1>
+<div class="api-method"><div class="api-method-definition"><p>Publishes data to a topic</p>
+<p>Input stack: <code>data topic</code></p>
+<p>Output stack:</p>
+<p>This instruction is the way to communicate with the rest of the
+actors in the database. It will send a data message to a particular
+topic, pushing nothing back to the stack. All topic subscribers will
+receive it.</p>
+</div><div class="api-method-code"><div class="api-method-example"><pre><code>PumpkinDB&gt; &quot;Hi&quot; &quot;MAIN&quot; PUBLISH
 </code></pre></div></div></div>
 
 <h2 id="allocation">Allocation</h2>
-<p>None</p>
+<p>Allocates for sending data copies.</p>
 <h2 id="errors">Errors</h2>
-<p><a href="errors/EmptyStack.html">EmptyStack</a> error if nothing is available on the stack</p>
+<p><a href="errors/EmptyStack.html">EmptyStack</a> error if stack is less than two items on the stack.</p>
 <h2 id="tests">Tests</h2>
-<pre><code class="lang-test">works : 1 1 DUP EQUAL?.
-empty_stack : [DUP] TRY UNWRAP 0x04 EQUAL?.
+<pre><code class="lang-test">empty_stack : [PUBLISH] TRY UNWRAP 0x04 EQUAL?.
+empty_stack_1 : [1 PUBLISH] TRY UNWRAP 0x04 EQUAL?.
 </code></pre>
 
                                 
@@ -1998,7 +1999,7 @@ empty_stack : [DUP] TRY UNWRAP 0x04 EQUAL?.
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"DUP","level":"1.2.1.11","depth":3,"next":{"title":"NIP","level":"1.2.1.12","depth":3,"path":"script/NIP.md","ref":"script/NIP.md","articles":[]},"previous":{"title":"DROP","level":"1.2.1.10","depth":3,"path":"script/DROP.md","ref":"script/DROP.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-api","fontsettings","github-buttons","expandable-chapters","ga","include"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"include":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"family":"serif","size":3,"theme":"white"},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"github-buttons":{"repo":"PumpkinDB/PumpkinDB","types":["star","watch"],"size":"large"},"ga":{"configuration":"auto","token":"UA-92644407-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PumpkinDB","gitbook":"*"},"file":{"path":"script/DUP.md","mtime":"2017-03-03T02:05:31.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-03T18:42:15.568Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"PUBLISH","level":"1.2.11.1","depth":3,"next":{"title":"SUBSCRIBE","level":"1.2.11.2","depth":3,"path":"script/SUBSCRIBE.md","ref":"script/SUBSCRIBE.md","articles":[]},"previous":{"title":"Messaging","level":"1.2.11","depth":2,"ref":"","articles":[{"title":"PUBLISH","level":"1.2.11.1","depth":3,"path":"script/PUBLISH.md","ref":"script/PUBLISH.md","articles":[]},{"title":"SUBSCRIBE","level":"1.2.11.2","depth":3,"path":"script/SUBSCRIBE.md","ref":"script/SUBSCRIBE.md","articles":[]},{"title":"UNSUBSCRIBE","level":"1.2.11.3","depth":3,"path":"script/UNSUBSCRIBE.md","ref":"script/UNSUBSCRIBE.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-api","fontsettings","github-buttons","expandable-chapters","ga","include"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"include":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"family":"serif","size":3,"theme":"white"},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"github-buttons":{"repo":"PumpkinDB/PumpkinDB","types":["star","watch"],"size":"large"},"ga":{"configuration":"auto","token":"UA-92644407-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PumpkinDB","gitbook":"*"},"file":{"path":"script/PUBLISH.md","mtime":"2017-04-03T05:19:43.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-03T18:42:15.568Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

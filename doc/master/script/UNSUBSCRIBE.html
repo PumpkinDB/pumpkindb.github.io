@@ -1601,12 +1601,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.11.1" data-path="SEND.html">
+        <li class="chapter " data-level="1.2.11.1" data-path="PUBLISH.html">
             
-                <a href="SEND.html">
+                <a href="PUBLISH.html">
             
                     
-                    SEND
+                    PUBLISH
             
                 </a>
             
@@ -1949,11 +1949,11 @@
                                 
                                 <h1 id="unsubscribe">UNSUBSCRIBE</h1>
 <div class="api-method"><div class="api-method-definition"><p>Unsubscribes the connection from a topic</p>
-<p>Input stack: <code>topic</code></p>
+<p>Input stack: <code>subscription</code></p>
 <p>Output stack: ``</p>
 <p><code>UNSUBSCRIBE</code> stops connected client to from receiving messages from a
 topic it previously subscribed to.</p>
-</div><div class="api-method-code"><div class="api-method-example"><pre><code>PumpkinDB&gt; &quot;topic&quot; SUBSCRIBE
+</div><div class="api-method-code"><div class="api-method-example"><pre><code>PumpkinDB&gt; &quot;topic&quot; SUBSCRIBE UNSUBSCRIBE
 </code></pre></div></div></div>
 
 <h2 id="allocation">Allocation</h2>
@@ -1961,8 +1961,8 @@ topic it previously subscribed to.</p>
 <h2 id="errors">Errors</h2>
 <p><a href="errors/EmptyStack.html">EmptyStack</a> error if there is less than one item on the stack</p>
 <h2 id="tests">Tests</h2>
-<p>No tests defined as this functionality is currently provided by the server,
-not the scheduler.</p>
+<pre><code class="lang-test">empty_stack : [UNSUBSCRIBE] TRY UNWRAP 0x04 EQUAL?.
+</code></pre>
 
                                 
                                 </section>
@@ -1996,7 +1996,7 @@ not the scheduler.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"UNSUBSCRIBE","level":"1.2.11.3","depth":3,"next":{"title":"Sequencing","level":"1.2.12","depth":2,"ref":"","articles":[{"title":"HLC","level":"1.2.12.1","depth":3,"path":"script/HLC.md","ref":"script/HLC.md","articles":[]},{"title":"HLC/LC","level":"1.2.12.2","depth":3,"path":"script/HLC/LC.md","ref":"script/HLC/LC.md","articles":[]},{"title":"HLC/TICK","level":"1.2.12.3","depth":3,"path":"script/HLC/TICK.md","ref":"script/HLC/TICK.md","articles":[]}]},"previous":{"title":"SUBSCRIBE","level":"1.2.11.2","depth":3,"path":"script/SUBSCRIBE.md","ref":"script/SUBSCRIBE.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-api","fontsettings","github-buttons","expandable-chapters","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"family":"serif","size":3,"theme":"white"},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"github-buttons":{"repo":"PumpkinDB/PumpkinDB","types":["star","watch"],"size":"large"},"ga":{"configuration":"auto","token":"UA-92644407-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PumpkinDB","gitbook":"*"},"file":{"path":"script/UNSUBSCRIBE.md","mtime":"2017-03-03T02:05:31.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-21T22:57:02.152Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"UNSUBSCRIBE","level":"1.2.11.3","depth":3,"next":{"title":"Sequencing","level":"1.2.12","depth":2,"ref":"","articles":[{"title":"HLC","level":"1.2.12.1","depth":3,"path":"script/HLC.md","ref":"script/HLC.md","articles":[]},{"title":"HLC/LC","level":"1.2.12.2","depth":3,"path":"script/HLC/LC.md","ref":"script/HLC/LC.md","articles":[]},{"title":"HLC/TICK","level":"1.2.12.3","depth":3,"path":"script/HLC/TICK.md","ref":"script/HLC/TICK.md","articles":[]}]},"previous":{"title":"SUBSCRIBE","level":"1.2.11.2","depth":3,"path":"script/SUBSCRIBE.md","ref":"script/SUBSCRIBE.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-api","fontsettings","github-buttons","expandable-chapters","ga","include"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"include":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"family":"serif","size":3,"theme":"white"},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"github-buttons":{"repo":"PumpkinDB/PumpkinDB","types":["star","watch"],"size":"large"},"ga":{"configuration":"auto","token":"UA-92644407-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PumpkinDB","gitbook":"*"},"file":{"path":"script/UNSUBSCRIBE.md","mtime":"2017-04-03T05:19:43.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-03T18:42:15.568Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

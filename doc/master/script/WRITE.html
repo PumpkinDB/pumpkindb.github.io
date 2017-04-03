@@ -1601,12 +1601,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.11.1" data-path="SEND.html">
+        <li class="chapter " data-level="1.2.11.1" data-path="PUBLISH.html">
             
-                <a href="SEND.html">
+                <a href="PUBLISH.html">
             
                     
-                    SEND
+                    PUBLISH
             
                 </a>
             
@@ -1956,6 +1956,7 @@ instructions like <a href="ASSOC.html">ASSOC</a> are only possible in the contex
 a WRITE. If changes are to be saved, <a href="COMMIT.html">COMMIT</a> has to be
 used as well. Read-transaction related instructions (such as <a href="RETR.html">RETR</a>)
 can also be used.</p>
+<p>The total number of transaction per environment is 64.</p>
 </div><div class="api-method-code"><div class="api-method-example"><pre><code>PumpkinDB&gt; [&quot;hi&quot; &quot;there&quot; ASSOC COMMIT] WRITE
 </code></pre></div></div></div>
 
@@ -2004,7 +2005,7 @@ empty_stack : [WRITE] TRY UNWRAP 0x04 EQUAL?.
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"WRITE","level":"1.2.4.22","depth":3,"next":{"title":"Binaries","level":"1.2.5","depth":2,"ref":"","articles":[{"title":"CONCAT","level":"1.2.5.1","depth":3,"path":"script/CONCAT.md","ref":"script/CONCAT.md","articles":[]},{"title":"GT?","level":"1.2.5.2","depth":3,"path":"script/GTQ.md","ref":"script/GTQ.md","articles":[]},{"title":"LENGTH","level":"1.2.5.3","depth":3,"path":"script/LENGTH.md","ref":"script/LENGTH.md","articles":[]},{"title":"LT?","level":"1.2.5.4","depth":3,"path":"script/LTQ.md","ref":"script/LTQ.md","articles":[]},{"title":"PAD","level":"1.2.5.5","depth":3,"path":"script/PAD.md","ref":"script/PAD.md","articles":[]},{"title":"SLICE","level":"1.2.5.6","depth":3,"path":"script/SLICE.md","ref":"script/SLICE.md","articles":[]},{"title":"STARTSWITH?","level":"1.2.5.7","depth":3,"path":"script/STARTSWITHQ.md","ref":"script/STARTSWITHQ.md","articles":[]}]},"previous":{"title":"RETR","level":"1.2.4.21","depth":3,"path":"script/RETR.md","ref":"script/RETR.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-api","fontsettings","github-buttons","expandable-chapters","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"family":"serif","size":3,"theme":"white"},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"github-buttons":{"repo":"PumpkinDB/PumpkinDB","types":["star","watch"],"size":"large"},"ga":{"configuration":"auto","token":"UA-92644407-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PumpkinDB","gitbook":"*"},"file":{"path":"script/WRITE.md","mtime":"2017-03-21T15:21:30.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-21T22:57:02.152Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"WRITE","level":"1.2.4.22","depth":3,"next":{"title":"Binaries","level":"1.2.5","depth":2,"ref":"","articles":[{"title":"CONCAT","level":"1.2.5.1","depth":3,"path":"script/CONCAT.md","ref":"script/CONCAT.md","articles":[]},{"title":"GT?","level":"1.2.5.2","depth":3,"path":"script/GTQ.md","ref":"script/GTQ.md","articles":[]},{"title":"LENGTH","level":"1.2.5.3","depth":3,"path":"script/LENGTH.md","ref":"script/LENGTH.md","articles":[]},{"title":"LT?","level":"1.2.5.4","depth":3,"path":"script/LTQ.md","ref":"script/LTQ.md","articles":[]},{"title":"PAD","level":"1.2.5.5","depth":3,"path":"script/PAD.md","ref":"script/PAD.md","articles":[]},{"title":"SLICE","level":"1.2.5.6","depth":3,"path":"script/SLICE.md","ref":"script/SLICE.md","articles":[]},{"title":"STARTSWITH?","level":"1.2.5.7","depth":3,"path":"script/STARTSWITHQ.md","ref":"script/STARTSWITHQ.md","articles":[]}]},"previous":{"title":"RETR","level":"1.2.4.21","depth":3,"path":"script/RETR.md","ref":"script/RETR.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-api","fontsettings","github-buttons","expandable-chapters","ga","include"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"include":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"family":"serif","size":3,"theme":"white"},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"github-buttons":{"repo":"PumpkinDB/PumpkinDB","types":["star","watch"],"size":"large"},"ga":{"configuration":"auto","token":"UA-92644407-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PumpkinDB","gitbook":"*"},"file":{"path":"script/WRITE.md","mtime":"2017-03-25T00:29:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-03T18:42:15.568Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
