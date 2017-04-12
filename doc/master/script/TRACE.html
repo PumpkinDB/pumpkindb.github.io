@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>TIMES · PumpkinDB</title>
+        <title>TRACE · PumpkinDB</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -68,10 +68,6 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="TRY.html" />
-    
-    
-    <link rel="prev" href="EVAL/VALIDQ.html" />
     
 
     <style>
@@ -1053,7 +1049,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.6.5" data-path="TIMES.html">
+        <li class="chapter " data-level="1.2.6.5" data-path="TIMES.html">
             
                 <a href="TIMES.html">
             
@@ -1732,7 +1728,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.13.1" data-path="TRACE.html">
+        <li class="chapter active" data-level="1.2.13.1" data-path="TRACE.html">
             
                 <a href="TRACE.html">
             
@@ -1979,7 +1975,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >TIMES</a>
+        <a href=".." >TRACE</a>
     </h1>
 </div>
 
@@ -1994,27 +1990,23 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="times">TIMES</h1>
-<div class="api-method"><div class="api-method-definition"><p>Takes the topmost item and evaluates it as a PumpkinScript
-program on the current stack <code>n</code> TIMES</p>
-<p>Input stack: <code>code n</code></p>
-<p>Output stack: result of <code>code</code> evaluation done <code>n</code> times</p>
-</div><div class="api-method-code"><div class="api-method-example"><pre><code>PumpkinDB&gt; [HLC] 3 TIMES
-0x000014A2D295195171C80000 0x000014A2D295195211F00000 0x000014A2D29519526BC80000
+                                <h1 id="trace">TRACE</h1>
+<p><strong>Only available in pumpkindb-term</strong></p>
+<div class="api-method"><div class="api-method-definition"><p>Takes the topmost item and sends it back to the terminal as a traced value.</p>
+<p>Input stack: <code>value</code>
+Output stack: none</p>
+<p>This instruction is used for debugging purposes. Multiple invocations are possible per script.</p>
+</div><div class="api-method-code"><div class="api-method-example"><pre><code>PumpkinDB&gt; &quot;start&quot; TRACE 1.
+Trace: &quot;start&quot;
+0x01
 </code></pre></div></div></div>
 
 <h2 id="allocation">Allocation</h2>
-<p>Allocates for recursion during runtime.</p>
+<p>None</p>
 <h2 id="errors">Errors</h2>
-<p><a href="errors/EmptyStack.html">EmptyStack</a> error if there is less than two items on the stack</p>
-<p><a href="errors/DECODING.html">Decoding error</a> error if the code is undecodable.</p>
+<p><a href="errors/EmptyStack.html">EmptyStack</a> error if there is less than one item on the stack</p>
 <h2 id="tests">Tests</h2>
-<pre><code class="lang-test">works : [10] 3 TIMES STACK [10 10 10] EQUAL?.
-works_0 : [10] 0 TIMES STACK LENGTH 0 EQUAL?.
-empty_stack : [TIMES] TRY UNWRAP 0x04 EQUAL?.
-empty_stack_1 : [1 TIMES] TRY UNWRAP 0x04 EQUAL?.
-invalid_code : [1 1 TIMES] TRY UNWRAP 0x05 EQUAL?.
-</code></pre>
+<p>No tests, this instruction is only defined in pumpkindb-term</p>
 
                                 
                                 </section>
@@ -2048,7 +2040,7 @@ invalid_code : [1 1 TIMES] TRY UNWRAP 0x05 EQUAL?.
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"TIMES","level":"1.2.6.5","depth":3,"next":{"title":"TRY","level":"1.2.6.6","depth":3,"path":"script/TRY.md","ref":"script/TRY.md","articles":[]},"previous":{"title":"EVAL/VALID?","level":"1.2.6.4","depth":3,"path":"script/EVAL/VALIDQ.md","ref":"script/EVAL/VALIDQ.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-api","fontsettings","github-buttons","expandable-chapters","ga","include"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"include":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"family":"serif","size":3,"theme":"white"},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"github-buttons":{"repo":"PumpkinDB/PumpkinDB","types":["star","watch"],"size":"large"},"ga":{"configuration":"auto","token":"UA-92644407-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PumpkinDB","gitbook":"*"},"file":{"path":"script/TIMES.md","mtime":"2017-03-28T03:33:36.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T00:35:14.343Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"TRACE","level":"1.2.13.1","depth":3,"next":{"title":"Miscellaneous","level":"1.2.14","depth":2,"ref":"","articles":[{"title":"FEATURE?","level":"1.2.14.1","depth":3,"path":"script/FEATUREQ.md","ref":"script/FEATUREQ.md","articles":[]},{"title":"$SYSTEM/VERSION","level":"1.2.14.2","depth":3,"path":"script/_SYSTEM/VERSION.md","ref":"script/_SYSTEM/VERSION.md","articles":[]}]},"previous":{"title":"Debugging","level":"1.2.13","depth":2,"ref":"","articles":[{"title":"TRACE","level":"1.2.13.1","depth":3,"path":"script/TRACE.md","ref":"script/TRACE.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-api","fontsettings","github-buttons","expandable-chapters","ga","include"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"include":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"family":"serif","size":3,"theme":"white"},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"github-buttons":{"repo":"PumpkinDB/PumpkinDB","types":["star","watch"],"size":"large"},"ga":{"configuration":"auto","token":"UA-92644407-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PumpkinDB","gitbook":"*"},"file":{"path":"script/TRACE.md","mtime":"2017-04-08T00:13:25.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T00:35:14.343Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
